@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "$";
 client.on('ready', () => {
-   client.user.setActivity("You | ^help",{type: 'WATCHING'})
+   client.user.setActivity("Games ShiftMC",{type: 'WATCHING'})
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
@@ -409,7 +409,7 @@ if (!points[message.author.id]) points[message.author.id] = {
 
   if(!message.guild) return;
 
-    let id = message.author.id,prefix="g!";
+    let id = message.author.id,prefix="$";
 
     if (spee[id] && (new Date).getTime() - spee[id] < 15*1000) {
 
